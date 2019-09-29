@@ -9,6 +9,12 @@ module中的控件绑定：不支持
 支持的注解（相较于原版）：只支持@BindView和@OnClick
 
 ## 用法
+依赖引入：
+```
+implementation project(path: ':cbutterknife')
+annotationProcessor project(path: ':compiler')
+```
+
 与原版基本一致，只不过只支持两个注解@BindView和@OnClick。绑定代码只是名称变了：
 ```
 CButterKnife.bind(this);        //Activity中绑定
